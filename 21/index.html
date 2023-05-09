@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=VT323&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21</title>
+    <script src="script.js" defer></script>
+
+    <style>
+        *{
+            animation: fade-in 1s;
+        }
+
+        body{
+            width: 100%; 
+            height: 100%;
+            background-image: url('img/fundo2.jpg');
+            overflow-x: hidden;
+            overflow-y: hidden; 
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container{
+            display: grid;
+            width: 80%;
+            margin: auto;
+            grid-template-areas: "inicio img";
+            grid-template-columns: 80% 20%;
+            align-items: center;
+        }
+
+        main{
+            width: 100%;
+            height: 97vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img{
+            width: 100%;
+            height: 100%;
+            position: static;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: img;
+        }
+
+        /* .fim{
+            height: 1vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        .fim2{
+            border-radius: 10px;
+            padding: 10px;
+            margin-right: 20px;
+        } */
+
+        .soma{
+            width: 10%;
+            height: 100%;
+            background-color: white;
+            margin-left: 46rem;
+            padding: 6px;
+            font-family: 'VT323', monospace;
+            font-size: medium;
+            border-radius: 10px;
+        }
+
+        .inicio{
+            width: 70%;
+            height: 45%;
+            background-color: white;
+            margin-top: 2rem; 
+            border-radius: 6px;
+            padding: 10px;
+            margin-top: 1rem;
+            grid-area: inicio;
+            font-family: 'Gemunu Libre', sans-serif;
+            font-size: large;
+        }
+
+        @keyframes fade-in {
+        from { opacity: 0 }
+        to   { opacity: 1 }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="soma">
+        <span id="somatoria">Somatoria: </span>
+    </div>
+
+    <div class="container">
+        <div class="inicio">
+        <h4><b>Parabéns, você conseguiu passar do jogo da memória!</b></h4>
+        <h4><b>Agora, consegue encarar essa?</b></h4>
+        <h4><b>Josnei já tem a metade da divida, graças a você</b>!</h4>
+        <h4><b>Agora ele está tentando ganhar em uma aposta de Jogo de Cartas mais conhecido com 21 de um cara que Josnei encontrou no metro</b></h4>
+        <h4><b>A sua missão agora é ganhar do cara, se a soma das cartas der um total de 21, Josnei ganha! Caso contrário, Josnei perde tudo e estará 'lascado' com o Marreta!</b></h4>
+        <h3><b>Vamos Juntos? É só clicar na carta e BOA SORTE!</b></h3>
+    </div>
+
+    <main>
+        <div class="img">
+            <img src="img/uno.jpg" width="300px" height="300px" id="card">
+        </div>
+
+    </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: solid 1px black; */
+    animation: fade-in 1s
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Gemunu Libre', sans-serif;
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;    
+    background-image: url('fundo-iniciar.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensagem{
+    width: 50rem;
+    height: 29rem;
+    background-color: #fffc;
+    position: absolute;
+    border-radius: 4px;
+    outline: solid 1px black;
+    animation: go-back 2s;
+}
+
+.mensagem h1, .mensagem h3, .mensagem h2, .mensagem button{
+    margin: 1rem;
+    border-radius: 4px;
+}
+
+.mensagem button{
+    background-color: #21D05F;
+    position: absolute;
+    width: 15%;
+    height: 3rem;
+    left: 83%;
+    margin: 3px;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(1250px);
+    }
+    to {
+      transform: translateX(0);
+    }
+    
+  }
+  
+@keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
