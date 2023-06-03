@@ -75,7 +75,7 @@ carta.addEventListener("click", function(){
 
         if (valortotal == 21){
             alert("Ganhou! seu numero deu " + valortotal);
-            window.location.replace("../final/final.html");
+            window.location.replace("final.html");
         }
 
         if (valortotal > 21){
